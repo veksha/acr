@@ -1431,7 +1431,7 @@ void writecfg()
     f->printf("// automatically written on exit, DO NOT MODIFY\n// delete this file to have defaults.cfg overwrite these settings\n// modify settings in game, or put settings in autoexec.cfg to override anything\n\n");
     f->printf("// basic settings\n\n");
     f->printf("name \"%s\"\n", player1->name);
-    extern const char *crosshairnames[CROSSHAIR_NUM];
+    /*extern const char *crosshairnames[CROSSHAIR_NUM];
     extern Texture *crosshairs[CROSSHAIR_NUM];
     loopi(CROSSHAIR_NUM) if(crosshairs[i] && crosshairs[i]!=notexture)
     {
@@ -1439,6 +1439,7 @@ void writecfg()
         if(i==CROSSHAIR_DEFAULT) f->printf("loadcrosshair %s\n", fname);
         else f->printf("loadcrosshair %s %s\n", fname, crosshairnames[i]);
     }
+    */
     extern int lowfps, highfps;
     f->printf("fpsrange %d %d\n", lowfps, highfps);
     extern string myfont;
