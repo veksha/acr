@@ -1013,6 +1013,12 @@ int main(int argc, char **argv)
 
     #define initlog(s) clientlogf("init: " s)
 
+    // veksha's custom patch
+    addpackagedir("acr");
+    restoredinits = true;
+    execfile((char *)"config/init.cfg");
+    //
+
     initing = INIT_RESET;
     for(int i = 1; i<argc; i++)
     {
