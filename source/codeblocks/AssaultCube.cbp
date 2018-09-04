@@ -21,7 +21,6 @@
 				<Option object_output=".objs/default" />
 				<Option type="0" />
 				<Option compiler="gcc" />
-				<Option parameters="--home=data --mod=acr --init " />
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-fomit-frame-pointer" />
@@ -57,7 +56,6 @@
 				<Option object_output=".objs/debug" />
 				<Option type="0" />
 				<Option compiler="gcc" />
-				<Option parameters="--home=data --mod=acr --init " />
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-Wextra" />
