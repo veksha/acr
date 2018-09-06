@@ -21,6 +21,7 @@
 				<Option object_output=".objs/default" />
 				<Option type="0" />
 				<Option compiler="gcc" />
+				<Option parameters="-t1 -w1920 -h1080" />
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-fomit-frame-pointer" />
@@ -56,6 +57,7 @@
 				<Option object_output=".objs/debug" />
 				<Option type="0" />
 				<Option compiler="gcc" />
+				<Option parameters="-t0 -w1024 -h768" />
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-Wextra" />
