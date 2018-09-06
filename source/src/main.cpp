@@ -1088,6 +1088,12 @@ int main(int argc, char **argv)
     }
     if(quitdirectly) return EXIT_SUCCESS;
 
+
+    // Early black window placeholder
+    putenv("SDL_VIDEO_CENTERED=1"); //Center window
+    SDL_SetVideoMode(scr_w, scr_h, 0, SDL_SWSURFACE | fullscreen ? SDL_FULLSCREEN:0);
+    //
+
     i18nmanager i18n("AC", path("packages/locale", true));
 
     initing = NOT_INITING;
